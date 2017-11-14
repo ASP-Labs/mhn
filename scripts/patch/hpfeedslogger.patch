@@ -1,0 +1,11 @@
+--- processors.py	2017-11-14 11:28:29.906972827 +0300
++++ /home/vtbui/Projects/processors.new.py	2017-11-14 11:26:54.235718780 +0300
+@@ -371,7 +371,7 @@
+     # extra suricata fields
+     kwargs = {}
+     for field in ['action', 'signature_id', 'signature_rev']:
+-        kwargs['suricata_{}'.format(field)] = dec.get(field)
++        kwargs['suricata_{}'.format(field)] = dec[field]
+ 
+     return create_message(
+         'suricata.events',
