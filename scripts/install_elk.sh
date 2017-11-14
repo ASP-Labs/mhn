@@ -18,6 +18,7 @@ echo 'deb http://packages.elasticsearch.org/elasticsearch/1.4/debian stable main
 apt-get update
 apt-get -y install elasticsearch=1.4.4
 sed -i '/network.host/c\network.host\:\ localhost' /etc/elasticsearch/elasticsearch.yml
+export ES_JAVA_OPTS="-Dmapper.allow_dots_in_name=true"
 service elasticsearch restart
 update-rc.d elasticsearch defaults 95 10
 
