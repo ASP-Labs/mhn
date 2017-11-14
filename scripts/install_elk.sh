@@ -32,7 +32,7 @@ update-rc.d elasticsearch defaults 95 10
 mkdir /tmp/kibana
 cd /tmp/kibana ;
 wget https://download.elastic.co/kibana/kibana/kibana-4.6.4-linux-x86_64.tar.gz
-tar xvf kibana-4.6.4-linux-x64.tar.gz
+tar xvf kibana-4.6.4-linux-x86_64.tar.gz
 sed -i '/0.0.0.0/c\host\:\ localhost' /etc/elasticsearch/elasticsearch.yml
 mkdir -p /opt/kibana
 cp -R /tmp/kibana/kibana-4*/* /opt/kibana/
