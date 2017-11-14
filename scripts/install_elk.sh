@@ -52,7 +52,6 @@ EOF
 
 # Install Logstash 2.4.1
 
-wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 echo "deb https://packages.elastic.co/logstash/2.4/debian stable main" | sudo tee -a /etc/apt/sources.list
 apt-get update
 apt-get install logstash
