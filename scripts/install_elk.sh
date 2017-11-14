@@ -24,6 +24,7 @@ echo 'threadpool.search.queue_size: 10000\n' >> /etc/elasticsearch/elasticsearch
 echo 'index.refresh_interval: 30s\n' >> /etc/elasticsearch/elasticsearch.yml
 echo 'index.dynamic.mapper: false\n' >> /etc/elasticsearch/elasticsearch.yml
 echo 'index.number_of_shards: 8' >> /etc/elasticsearch/elasticsearch.yml
+export ES_JAVA_OPTS="-Dmapper.allow_dots_in_name=true"
 service elasticsearch restart
 update-rc.d elasticsearch defaults 95 10
 
