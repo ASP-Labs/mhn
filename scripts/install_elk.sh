@@ -50,9 +50,9 @@ autorestart=true
 startsecs=10
 EOF
 
-# Install Logstash 1.5
+# Install Logstash 2.4.1
 
-echo 'deb http://packages.elasticsearch.org/logstash/1.5/debian stable main' |  tee /etc/apt/sources.list.d/logstash.list
+echo "deb https://packages.elastic.co/logstash/2.4/debian stable main" | sudo tee -a /etc/apt/sources.list
 apt-get update
 apt-get install logstash
 cd /opt/logstash
