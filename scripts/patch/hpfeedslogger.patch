@@ -1,4 +1,4 @@
---- processors.py	2017-11-14 11:28:29.906972827 +0300
+--- /opt/hpfeeds-logger/local/lib/python2.7/site-packages/hpfeedslogger/processors.py	2017-11-14 11:28:29.906972827 +0300
 +++ /home/vtbui/Projects/processors.new.py	2017-11-14 11:26:54.235718780 +0300
 @@ -371,7 +371,7 @@
      # extra suricata fields
